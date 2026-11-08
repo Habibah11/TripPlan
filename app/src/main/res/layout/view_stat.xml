@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/surface" app:cardCornerRadius="16dp" app:cardElevation="2dp">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="14dp">
+        <ImageView
+            android:id="@+id/ivStat" android:layout_width="36dp" android:layout_height="36dp"
+            android:background="@drawable/bg_circle_soft" android:padding="8dp"
+            android:src="@drawable/ic_plane" app:tint="@color/primary" android:contentDescription="Ikon" />
+        <TextView
+            android:id="@+id/tvValue" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" android:maxLines="1"
+            android:autoSizeTextType="uniform" android:autoSizeMinTextSize="10sp" android:autoSizeMaxTextSize="22sp"
+            android:textColor="@color/text_primary" android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvLabel" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/text_secondary" android:textSize="12sp" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

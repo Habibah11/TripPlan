@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#64B5F6</color>
+    <color name="primary_dark">#1E3A8A</color>
+    <color name="accent">#90CAF9</color>
+    <color name="on_primary">#0B1B33</color>
+    <color name="primary_soft">#1E3A5F</color>
+    <color name="bg">#0F172A</color>
+    <color name="surface">#1E293B</color>
+    <color name="text_primary">#E8EEF9</color>
+    <color name="text_secondary">#9FB0CC</color>
+    <color name="toolbar_bg">#1E293B</color>
+    <color name="hero_bg">#1E40AF</color>
+    <color name="status_bar">#0B1220</color>
+    <color name="danger">#EF5350</color>
+    <color name="success">#66BB6A</color>
+</resources>

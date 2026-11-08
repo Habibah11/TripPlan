@@ -1,0 +1,27 @@
+<resources>
+    <string-array name="dest_categories">
+        <item>Alam</item>
+        <item>Kuliner</item>
+        <item>Budaya</item>
+        <item>Hiburan</item>
+        <item>Belanja</item>
+        <item>Penginapan</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="expense_categories">
+        <item>Transportasi</item>
+        <item>Akomodasi</item>
+        <item>Makanan</item>
+        <item>Tiket Wisata</item>
+        <item>Belanja</item>
+        <item>Lainnya</item>
+    </string-array>
+    <string-array name="currencies">
+        <item>IDR - Rupiah</item>
+        <item>USD - Dolar AS</item>
+        <item>EUR - Euro</item>
+        <item>MYR - Ringgit</item>
+        <item>SGD - Dolar Singapura</item>
+        <item>JPY - Yen</item>
+    </string-array>
+</resources>

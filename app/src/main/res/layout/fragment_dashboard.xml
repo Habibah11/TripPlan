@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView
+            android:id="@+id/tvGreeting" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="@color/text_primary" android:textSize="24sp" android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" android:text="Siap merencanakan perjalanan berikutnya?"
+            android:textColor="@color/text_secondary" android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardHero" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:clickable="true" android:focusable="true"
+            app:cardBackgroundColor="@color/hero_bg" app:cardCornerRadius="20dp" app:cardElevation="4dp">
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="PERJALANAN BERIKUTNYA" android:textColor="#B3FFFFFF"
+                    android:textSize="12sp" android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvHeroTitle" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp" android:textColor="#FFFFFF"
+                    android:textSize="22sp" android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvHeroSub" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" android:textColor="#E6FFFFFF" android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/tvHeroCountdown" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp" android:background="@drawable/bg_pill"
+                    android:paddingHorizontal="14dp" android:paddingVertical="6dp"
+                    android:textColor="#FFFFFF" android:textSize="13sp" android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:orientation="horizontal">
+            <include android:id="@+id/stat1" layout="@layout/view_stat"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="6dp" />
+            <include android:id="@+id/stat2" layout="@layout/view_stat"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="6dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:orientation="horizontal">
+            <include android:id="@+id/stat3" layout="@layout/view_stat"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginEnd="6dp" />
+            <include android:id="@+id/stat4" layout="@layout/view_stat"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:layout_marginStart="6dp" />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/surface" app:cardCornerRadius="16dp" app:cardElevation="2dp">
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Ringkasan Anggaran" android:textColor="@color/text_primary"
+                    android:textSize="16sp" android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvBudgetTotal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:textColor="@color/text_primary" android:textSize="14sp" />
+                <ProgressBar
+                    android:id="@+id/progressBudget" style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginTop="8dp"
+                    android:progressBackgroundTint="@color/primary_soft" android:progressTint="@color/primary" />
+                <TextView
+                    android:id="@+id/tvBudgetUsed" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" android:textColor="@color/text_secondary" android:textSize="13sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardTips" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="@color/primary_soft" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Tips Perjalanan" android:textColor="@color/primary"
+                    android:textSize="14sp" android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvTips" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp" android:textColor="@color/text_primary" android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNewTrip" android:layout_width="match_parent" android:layout_height="56dp"
+            android:layout_marginTop="16dp" android:text="Rencanakan Perjalanan Baru"
+            app:cornerRadius="14dp" app:icon="@drawable/ic_add" />
+    </LinearLayout>
+</ScrollView>

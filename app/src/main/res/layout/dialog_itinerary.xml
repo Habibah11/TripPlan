@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:paddingHorizontal="24dp" android:paddingTop="12dp">
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Hari ke-">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDay" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="number" android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:hint="Jam (tap untuk memilih)">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTime" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:clickable="true" android:cursorVisible="false" android:focusable="false" android:inputType="none" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:hint="Kegiatan">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etActivity" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="textCapSentences" android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" android:hint="Tempat (opsional)">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etPlace" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:inputType="textCapWords" android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/bg" android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar" android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" android:background="@color/toolbar_bg"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:titleTextColor="#FFFFFF" />
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/toolbar_bg" android:orientation="vertical"
+        android:paddingBottom="16dp" android:paddingHorizontal="16dp">
+        <TextView
+            android:id="@+id/tvDetDest" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:textColor="#FFFFFF" android:textSize="20sp" android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvDetDates" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:textColor="#E6FFFFFF" android:textSize="13sp" />
+        <TextView
+            android:id="@+id/tvDetStatus" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_pill"
+            android:paddingHorizontal="12dp" android:paddingVertical="4dp"
+            android:textColor="#FFFFFF" android:textSize="12sp" android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvDetBudget" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:textColor="#E6FFFFFF" android:textSize="13sp" />
+    </LinearLayout>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@color/surface" app:tabIndicatorColor="@color/primary"
+        app:tabSelectedTextColor="@color/primary" app:tabTextColor="@color/text_secondary" />
+    <FrameLayout
+        android:id="@+id/detailContainer" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" />
+</LinearLayout>
