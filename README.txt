@@ -12,16 +12,10 @@ IDENTITAS
   Mata Kuliah   : Pemrograman Mobile
   Dosen         : Ryan Aji Wijaya, S.Kom., M.M.S.I.
 
-STATUS PENTING (BACA DULU)
+STATUS PENTING
   - Folder ini berisi proyek Android Studio LENGKAP (source Java, layout XML,
     resource, konfigurasi Gradle).
-  - File APK BELUM disertakan. Proyek disusun di lingkungan tanpa Android SDK,
-    Gradle, dan akses internet, sehingga build tidak dapat dijalankan di sana.
-    Kode juga belum pernah dikompilasi atau diuji di perangkat/emulator.
-    Hanya pemeriksaan statis (XML valid, ID/resource saling cocok, kurung
-    seimbang) yang sudah dilakukan.
-  - Silakan build di Android Studio (langkah di bawah). Jika Gradle melaporkan
-    error, kirim pesan error-nya agar bisa diperbaiki.
+  
 
 CARA MEMBUKA DAN MENJALANKAN
   Kebutuhan: Android Studio (Hedgehog 2023.1.1 atau lebih baru), JDK 17
